@@ -63,6 +63,12 @@ class ContactForm extends ComponentBase{
                 'description' => 'devinx.contactus::lang.strings.inject_bootstrap_desc',
                 'type'        => 'checkbox',
                 'default'     => true,
+            ],
+            'injectInternalJs' => [
+                'title'       => 'devinx.contactus::lang.strings.inject_js',
+                'description' => 'devinx.contactus::lang.strings.inject_js_desc',
+                'type'        => 'checkbox',
+                'default'     => true,
             ]
         ];
     }
@@ -139,8 +145,9 @@ class ContactForm extends ComponentBase{
         if($this->enableCaptcha() == true){
             $this->addJs('https://www.google.com/recaptcha/api.js');
         }
-
+        if($this->property('injectInternalJs')){
         $this->addJs('assets/js/main.js');
+        }
         $this->page["name_input"] = Settings::get('name_input');
         $this->page["email_input"] = Settings::get('email_input');
         $this->page["subject_input"] = Settings::get('subject_input');

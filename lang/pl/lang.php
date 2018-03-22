@@ -35,7 +35,9 @@ return [
         'enable_server_captcha_validation_desc'       => 'Wybierz, jeśli captcha ma być wysyłana do Google w celu walidacji (opcjonalne, nie zalecane)',
         'enable_captcha'            => 'Włącz CAPTCHA',
         'enable_captcha_comment'    => 'Włącz funkcjonalność CAPTCHA formularza kontaktowego',
-        'enable_captcha_desc'       => 'Włącz funkcjonalność CAPTCHA formularza kontaktowego'
+        'enable_captcha_desc'       => 'Włącz funkcjonalność CAPTCHA formularza kontaktowego',
+        'inject_js'                                => 'Wprowadź pliki JS wtyczki',
+        'inject_js_desc'                           => 'Jeśli wyłączone, pamiętaj, aby umieścić wtyczki ręcznie.',
     ],
     'permissions' => [
         'tab'      => 'Wtyczka ContactUs',
